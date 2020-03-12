@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.dispatch import receiver
 from django.utils import timezone
 from django.db.models.signals import post_save
+from tinymce.models import HTMLField
 
 
 class Profile(models.Model):
