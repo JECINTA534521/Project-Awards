@@ -1,0 +1,17 @@
+
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn px-4" onclick="closeNav()">&times;</a>
+        {% if user.is_authenticated %}
+        <a href="{% url 'index' %}" class="pl-5 p-4 border-bottom border-top mt-2 hvr-forward">Home</a>
+        <a href="{% url 'project' %}" class="pl-5 p-4 border-bottom hvr-forward">Projects</a>
+        <a href="#" class="pl-5 p-4 border-bottom hvr-forward">Subscribe</a>
+        
+        {% else %}
+        <a href="accounts/login/" class="pl-5 p-4 border-top border-bottom mt-2 hvr-forward">Login</a>
+        <a href="{% url 'index' %}" class="pl-5 p-4 border-bottom hvr-forward">Home</a>
+        <a href="{% url 'project' %}" class="pl-5 p-4 border-bottom hvr-forward">Projects</a>
+        <a href="#" class="pl-5 p-4 border-bottom hvr-forward">Subscribe</a>
+        <a href="#" class="pl-5 p-4 border-bottom hvr-forward">Contact</a>
+      
+        {% endif %}
+    </div>
