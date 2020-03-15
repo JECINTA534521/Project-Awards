@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'awards',
     'bootstrap4',
-    'tinymce'
+    'tinymce',
+    'mathfilters'
 ]
 
 MIDDLEWARE = [
